@@ -104,6 +104,12 @@ function jsonp(url, callback) {
     navigate('/results?search_query=' + encodeURI(event.target.innerText));
  }
 
+ const handleSubmit = (e) => {
+   e.preventDefault()
+   setShowSuggestions(false);
+   navigate('/results?search_query=' + encodeURI(searchQuery));
+ }
+
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
@@ -119,8 +125,14 @@ function jsonp(url, callback) {
             </div>
             <div className="relative">
             <div className='flex flex-row relative'>
+                  <form className="flex" onSubmit={handleSubmit}>
                   <input value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} onFocus={() => setShowSuggestions(true)} onBlur={() => setShowSuggestions(false)} className='border rounded-l-full w-[572px] h-10 pl-5 outline-none' type='text' placeholder='Search' />
-                  <button className='border rounded-r-full w-16 h-10 bg-gray-100'><img alt='search-icon' className='h-5 mx-auto' src='https://cdn-icons-png.flaticon.com/512/482/482631.png' /></button>
+                  <button type="submit" className='border rounded-r-full w-16 h-10 bg-gray-100'>
+                     <img alt='search-icon' className='h-5 mx-auto' src='https://cdn-icons-png.flaticon.com/512/482/482631.png' />
+                     </button>
+
+                  </form>
+
                   <div className='w-10 h-10 hover:rounded-full hover:bg-gray-100 ml-5 cursor-pointer'>
                      <img className='mt-2 ml-2' alt='mick-icon ' src={mikeIcon} />
                   </div>
