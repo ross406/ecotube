@@ -36,29 +36,6 @@ const Header = () => {
 
   }, [searchQuery]);
 
-//   const getSuggestions = async () => {
-//    // Define the CORS Anywhere proxy URL
-//    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
-   
-//    // Prepend the proxy URL to the original SEARCH_API endpoint
-//    await fetch(`${CORS_PROXY}${SEARCH_API}${searchQuery}`, {
-//      method: 'GET', // Optionally specify the method
-//      headers: {
-//        'X-Requested-With': 'XMLHttpRequest' // Some instances of CORS Anywhere require this header
-//      }
-//    })
-//    .then((data) => data.json())
-//    .then((response) => {
-//      setSuggestions(response[1]);
-//      console.log(response);
-//      dispatch(cacheSuggestions({
-//        [searchQuery]: response[1],
-//      }))
-//    })
-//    .catch((error) => {
-//      console.error('Error fetching the suggestions:', error);
-//    });
-//  };
 
 function jsonp(url, callback) {
    let callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
@@ -83,20 +60,8 @@ function jsonp(url, callback) {
      }));
    });
  };
- 
- 
 
-//   const getSuggestions = async () => {
-//     await fetch(SEARCH_API + searchQuery)
-//       .then((data) => data.json())
-//       .then((response) => {
-//         setSuggestions(response[1]);
-//         console.log(response);
-//         dispatch(cacheSuggestions({
-//           [searchQuery] : response[1],
-//         }))
-//       });
-//   };
+
 
   const handleSuggestion = (event) => {
     setSearchQuery(event.target.innerText);
