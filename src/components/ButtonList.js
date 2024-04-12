@@ -1,4 +1,4 @@
-import React, {  useRef } from "react";
+import React, { useRef } from "react";
 import Button from "./Button";
 import letScrollIcon from "../assets/left-scroll.svg";
 import rightScrollIcon from "../assets/right-scroll.svg";
@@ -59,7 +59,7 @@ const ButtonList = () => {
   };
 
   return (
-    <div className="flex  ml-[300px] z-40 bg-white pb-2">
+    <div className="hidden md:flex ml-5 md:ml-40 z-40 bg-white pb-2">
       <button
         onClick={prev}
         className="hover:rounded-full w-10 h-10 mr-2 hover:bg-gray-100 fixed z-50"
