@@ -59,7 +59,7 @@ const ButtonList = () => {
   };
 
   return (
-    <div className="hidden md:flex ml-5 md:ml-40 z-40 bg-white pb-2">
+    <div className="hidden md:flex ml-5 md:ml-40 lg:ml-64 z-40 bg-white pb-2">
       <button
         onClick={prev}
         className="hover:rounded-full w-10 h-10 mr-2 hover:bg-gray-100 fixed z-50"
@@ -73,7 +73,7 @@ const ButtonList = () => {
       </div>
       <button
         onClick={next}
-        className="hover:rounded-full w-10 h-10 ml-2 right-20 hover:bg-gray-100 fixed z-50"
+        className="hover:rounded-full w-20 h-10 ml-5 right-12 bg-white hover:bg-gray-100 fixed z-50"
       >
         <img
           alt="rightScrollBtn"
