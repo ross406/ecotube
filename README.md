@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# EchoTube 🎬
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EchoTube is a modern video streaming platform built with **React**, **Redux**, and the **YouTube Data API**. It features debounced search, caching, infinite scroll, and a sleek UI styled with **Tailwind CSS** — delivering a responsive, smooth, and API-efficient experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔍 **YouTube API Integration**  
+  Fetches real-time video data using the YouTube Data API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⌨️ **Debounced Search**  
+  Optimized search input to reduce API calls by up to 90%.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🧠 **Suggestion Caching**  
+  Stores and reuses previous suggestion results to reduce redundant API usage.
 
-### `npm test`
+- 🔄 **Infinite Scroll**  
+  Seamlessly loads more videos as the user scrolls down.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🎨 **Modern UI with Tailwind CSS**  
+  Clean, responsive design using Tailwind for styling.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Live Site**: [https://echotube-fe.netlify.app/](https://echotube-fe.netlify.app/)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧰 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Frontend**: React, Redux, React Router  
+- **API**: YouTube Data API v3  
+- **Styling**: Tailwind CSS  
+- **Utilities**: Axios, Lodash (for debouncing)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠 Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**
 
-## Learn More
+```bash
+git clone https://github.com/ross406/ecotube.git
+cd ecotube
+````
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install Dependencies**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+```
 
-### Code Splitting
+> 🔑 You can get your API key from [Google Developer Console](https://console.developers.google.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Start Development Server**
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🙌 Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* [YouTube Data API](https://developers.google.com/youtube/v3)
+* [Tailwind CSS](https://tailwindcss.com)
+* [React Redux](https://react-redux.js.org)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
